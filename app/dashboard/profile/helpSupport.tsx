@@ -44,15 +44,20 @@ const HelpSupportScreen = () => {
 
     try {
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
 
       Alert.alert(
         "Message Sent",
         "Your support request has been submitted. We'll get back to you within 24 hours.",
-        [{ text: "OK", onPress: () => {
-          setSubject("");
-          setMessage("");
-        }}]
+        [
+          {
+            text: "OK",
+            onPress: () => {
+              setSubject("");
+              setMessage("");
+            },
+          },
+        ]
       );
     } catch {
       Alert.alert("Error", "Failed to send message. Please try again.");
@@ -66,7 +71,7 @@ const HelpSupportScreen = () => {
     title,
     subtitle,
     onPress,
-    color = "#6B7280"
+    color = "#6B7280",
   }: {
     icon: keyof typeof Ionicons.glyphMap;
     title: string;
@@ -200,7 +205,8 @@ const HelpSupportScreen = () => {
                 How do I accept a trip request?
               </Text>
               <Text className="text-gray-600 dark:text-gray-400 text-sm">
-                When you receive a trip request, tap &quot;Accept&quot; on the notification or in the Trips tab.
+                When you receive a trip request, tap &quot;Accept&quot; on the
+                notification or in the Trips tab.
               </Text>
             </View>
 
@@ -209,7 +215,8 @@ const HelpSupportScreen = () => {
                 How do I update my vehicle information?
               </Text>
               <Text className="text-gray-600 dark:text-gray-400 text-sm">
-                Go to Profile → Vehicle Information → Edit to update your vehicle details.
+                Go to Profile → Vehicle Information → Edit to update your
+                vehicle details.
               </Text>
             </View>
 
@@ -218,7 +225,8 @@ const HelpSupportScreen = () => {
                 What should I do if I can&apos;t find a passenger?
               </Text>
               <Text className="text-gray-600 dark:text-gray-400 text-sm">
-                Call the passenger using the number provided in the trip details, or contact support for assistance.
+                Call the passenger using the number provided in the trip
+                details, or contact support for assistance.
               </Text>
             </View>
 
@@ -227,14 +235,13 @@ const HelpSupportScreen = () => {
                 How do I report a technical issue?
               </Text>
               <Text className="text-gray-600 dark:text-gray-400 text-sm">
-                Use the &quot;Send us a Message&quot; form above or call our support line for immediate assistance.
+                Use the &quot;Send us a Message&quot; form above or call our
+                support line for immediate assistance.
               </Text>
             </View>
           </View>
         </View>
-
       </ScrollView>
-
     </SafeAreaView>
   );
 };

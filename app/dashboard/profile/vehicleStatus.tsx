@@ -10,7 +10,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
+import { useDriverAuthStore } from "../../../src/stores/driverAuthStore";
 
 const VehicleStatusScreen = () => {
   const router = useRouter();
@@ -20,7 +20,10 @@ const VehicleStatusScreen = () => {
 
   const handleDeactivate = async () => {
     if (!reason.trim()) {
-      Alert.alert("Error", "Please provide a reason for putting the vehicle out of service");
+      Alert.alert(
+        "Error",
+        "Please provide a reason for putting the vehicle out of service"
+      );
       return;
     }
 
@@ -35,7 +38,7 @@ const VehicleStatusScreen = () => {
       });
 
       Alert.alert("Success", "Vehicle has been put out of service", [
-        { text: "OK", onPress: () => router.back() }
+        { text: "OK", onPress: () => router.back() },
       ]);
     } catch {
       Alert.alert("Error", "Failed to update vehicle status");
@@ -130,8 +133,9 @@ const VehicleStatusScreen = () => {
                   Important Notice
                 </Text>
                 <Text className="text-yellow-700 dark:text-yellow-300 text-sm">
-                  Putting your vehicle out of service will prevent you from receiving trip requests.
-                  Make sure to provide a valid reason for this action.
+                  Putting your vehicle out of service will prevent you from
+                  receiving trip requests. Make sure to provide a valid reason
+                  for this action.
                 </Text>
               </View>
             </View>
@@ -173,7 +177,6 @@ const VehicleStatusScreen = () => {
           </TouchableOpacity>
         </View>
       </ScrollView>
-
     </SafeAreaView>
   );
 };

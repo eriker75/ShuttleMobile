@@ -2,8 +2,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import React from "react";
 import { Alert, Text, TouchableOpacity, View } from "react-native";
-import { DashboardLayout } from "../../components/dashboard";
-import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
+import { DashboardLayout } from "../../../components/dashboard";
+import { useDriverAuthStore } from "../../../src/stores/driverAuthStore";
 
 const DriverProfileScreen = () => {
   const router = useRouter();
@@ -36,18 +36,14 @@ const DriverProfileScreen = () => {
               </Text>
             </View>
             <View className="flex-row justify-between">
-              <Text className="text-gray-600 dark:text-gray-400">
-                Email:
-              </Text>
+              <Text className="text-gray-600 dark:text-gray-400">Email:</Text>
               <Text className="text-gray-900 dark:text-white font-medium">
                 {driverProfile?.email || "driver@example.com"}
               </Text>
             </View>
             {driverProfile?.phone && (
               <View className="flex-row justify-between">
-                <Text className="text-gray-600 dark:text-gray-400">
-                  Phone:
-                </Text>
+                <Text className="text-gray-600 dark:text-gray-400">Phone:</Text>
                 <Text className="text-gray-900 dark:text-white font-medium">
                   {driverProfile.phone}
                 </Text>
@@ -64,13 +60,15 @@ const DriverProfileScreen = () => {
               </View>
             )}
             <View className="flex-row justify-between">
-              <Text className="text-gray-600 dark:text-gray-400">
-                Status:
-              </Text>
+              <Text className="text-gray-600 dark:text-gray-400">Status:</Text>
               <View className="flex-row items-center">
-                <View className={`w-2 h-2 rounded-full mr-2 ${
-                  driverProfile?.isActive !== false ? "bg-green-500" : "bg-red-500"
-                }`} />
+                <View
+                  className={`w-2 h-2 rounded-full mr-2 ${
+                    driverProfile?.isActive !== false
+                      ? "bg-green-500"
+                      : "bg-red-500"
+                  }`}
+                />
                 <Text className="text-gray-900 dark:text-white font-medium">
                   {driverProfile?.isActive !== false ? "Active" : "Inactive"}
                 </Text>
@@ -128,11 +126,17 @@ const DriverProfileScreen = () => {
                   Status:
                 </Text>
                 <View className="flex-row items-center">
-                  <View className={`w-2 h-2 rounded-full mr-2 ${
-                    driverVehicle.isActive !== false ? "bg-green-500" : "bg-red-500"
-                  }`} />
+                  <View
+                    className={`w-2 h-2 rounded-full mr-2 ${
+                      driverVehicle.isActive !== false
+                        ? "bg-green-500"
+                        : "bg-red-500"
+                    }`}
+                  />
                   <Text className="text-gray-900 dark:text-white font-medium">
-                    {driverVehicle.isActive !== false ? "Active" : "Unavailable"}
+                    {driverVehicle.isActive !== false
+                      ? "Active"
+                      : "Unavailable"}
                   </Text>
                 </View>
               </View>
@@ -143,7 +147,7 @@ const DriverProfileScreen = () => {
         {/* Profile Options */}
         <View className="bg-white dark:bg-gray-800 rounded-lg shadow-sm">
           <TouchableOpacity
-            onPress={() => router.push("/dashboard/editProfile")}
+            onPress={() => router.push("/dashboard/profile/editProfile")}
             className="flex-row items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700"
           >
             <View className="flex-row items-center">
@@ -160,7 +164,7 @@ const DriverProfileScreen = () => {
               onPress={() => {
                 if (driverVehicle.isActive !== false) {
                   // Vehicle is active, navigate to deactivation view
-                  router.push("/dashboard/vehicleStatus");
+                  router.push("/dashboard/profile/vehicleStatus");
                 } else {
                   // Vehicle is inactive, show confirmation to activate
                   Alert.alert(
@@ -171,7 +175,8 @@ const DriverProfileScreen = () => {
                       {
                         text: "Activate",
                         onPress: () => {
-                          const { setDriverVehicle } = useDriverAuthStore.getState();
+                          const { setDriverVehicle } =
+                            useDriverAuthStore.getState();
                           setDriverVehicle({
                             ...driverVehicle,
                             isActive: true,
@@ -186,12 +191,26 @@ const DriverProfileScreen = () => {
             >
               <View className="flex-row items-center">
                 <Ionicons
-                  name={driverVehicle.isActive !== false ? "car-outline" : "car-sport-outline"}
+                  name={
+                    driverVehicle.isActive !== false
+                      ? "car-outline"
+                      : "car-sport-outline"
+                  }
                   size={24}
-                  color={driverVehicle.isActive !== false ? "#6B7280" : "#F59E0B"}
+                  color={
+                    driverVehicle.isActive !== false ? "#6B7280" : "#F59E0B"
+                  }
                 />
-                <Text className={`ml-3 ${driverVehicle.isActive !== false ? "text-gray-900 dark:text-white" : "text-orange-600 dark:text-orange-400"}`}>
-                  {driverVehicle.isActive !== false ? "Put Vehicle Out of Service" : "Reactivate Vehicle"}
+                <Text
+                  className={`ml-3 ${
+                    driverVehicle.isActive !== false
+                      ? "text-gray-900 dark:text-white"
+                      : "text-orange-600 dark:text-orange-400"
+                  }`}
+                >
+                  {driverVehicle.isActive !== false
+                    ? "Put Vehicle Out of Service"
+                    : "Reactivate Vehicle"}
                 </Text>
               </View>
               <Ionicons name="chevron-forward" size={20} color="#6B7280" />
@@ -199,7 +218,7 @@ const DriverProfileScreen = () => {
           )}
 
           <TouchableOpacity
-            onPress={() => router.push("/dashboard/settings")}
+            onPress={() => router.push("/dashboard/profile/settings")}
             className="flex-row items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700"
           >
             <View className="flex-row items-center">
@@ -212,7 +231,7 @@ const DriverProfileScreen = () => {
           </TouchableOpacity>
 
           <TouchableOpacity
-            onPress={() => router.push("/dashboard/helpSupport")}
+            onPress={() => router.push("/dashboard/profile/helpSupport")}
             className="flex-row items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700"
           >
             <View className="flex-row items-center">
@@ -226,22 +245,18 @@ const DriverProfileScreen = () => {
 
           <TouchableOpacity
             onPress={() => {
-              Alert.alert(
-                "Sign Out",
-                "Are you sure you want to sign out?",
-                [
-                  { text: "Cancel", style: "cancel" },
-                  {
-                    text: "Sign Out",
-                    style: "destructive",
-                    onPress: () => {
-                      const { logout } = useDriverAuthStore.getState();
-                      logout();
-                      router.replace("/auth/login");
-                    },
+              Alert.alert("Sign Out", "Are you sure you want to sign out?", [
+                { text: "Cancel", style: "cancel" },
+                {
+                  text: "Sign Out",
+                  style: "destructive",
+                  onPress: () => {
+                    const { logout } = useDriverAuthStore.getState();
+                    logout();
+                    router.replace("/auth/login");
                   },
-                ]
-              );
+                },
+              ]);
             }}
             className="flex-row items-center justify-between p-4"
           >

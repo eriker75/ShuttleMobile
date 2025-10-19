@@ -45,30 +45,6 @@ export default function DashboardLayout() {
           }}
         />
         <Tabs.Screen
-          name="editProfile"
-          options={{
-            href: null,
-          }}
-        />
-        <Tabs.Screen
-          name="settings"
-          options={{
-            href: null,
-          }}
-        />
-        <Tabs.Screen
-          name="helpSupport"
-          options={{
-            href: null,
-          }}
-        />
-        <Tabs.Screen
-          name="vehicleStatus"
-          options={{
-            href: null,
-          }}
-        />
-        <Tabs.Screen
           name="notifications"
           options={{
             href: null,
