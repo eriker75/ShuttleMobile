@@ -16,6 +16,9 @@ export default function DashboardLayout() {
         <Stack.Screen name="editVehicle" />
         <Stack.Screen name="settings" />
         <Stack.Screen name="helpSupport" />
+        <Stack.Screen name="notifications" />
+        <Stack.Screen name="notifications/[id]" />
+        <Stack.Screen name="vehicleStatus" />
       </Stack>
     </AuthGuard>
   );

@@ -21,6 +21,7 @@ const EditProfileScreen = () => {
     name: driverProfile?.name || "",
     email: driverProfile?.email || "",
     phone: driverProfile?.phone || "",
+    idCard: driverProfile?.idCard || "",
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -161,6 +162,23 @@ const EditProfileScreen = () => {
                     value={formData.phone}
                     onChangeText={(value) => updateField("phone", value)}
                     keyboardType="phone-pad"
+                  />
+                </View>
+              </View>
+
+              {/* ID Card */}
+              <View>
+                <Text className="text-gray-700 dark:text-gray-300 text-sm mb-2">
+                  ID Card Number
+                </Text>
+                <View className="flex-row items-center border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-3">
+                  <Ionicons name="card-outline" size={20} color="#6B7280" />
+                  <TextInput
+                    className="flex-1 ml-3 text-gray-900 dark:text-white"
+                    placeholder="Enter your ID card number"
+                    placeholderTextColor="#9CA3AF"
+                    value={formData.idCard || ""}
+                    onChangeText={(value) => updateField("idCard", value)}
                   />
                 </View>
               </View>

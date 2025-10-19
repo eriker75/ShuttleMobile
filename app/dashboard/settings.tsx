@@ -101,11 +101,11 @@ const SettingsScreen = () => {
         contentContainerStyle={{ paddingBottom: 100 }}
         showsVerticalScrollIndicator={false}
       >
-        {/* Driver Status */}
+        {/* All Settings */}
         <View className="bg-white dark:bg-gray-800 rounded-lg mx-4 mt-4 shadow-sm">
           <View className="p-4">
             <Text className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              Driver Status
+              Settings
             </Text>
             <SettingItem
               icon="person-circle-outline"
@@ -114,15 +114,6 @@ const SettingsScreen = () => {
               value={settings.isActive}
               onValueChange={(value) => updateSetting("isActive", value)}
             />
-          </View>
-        </View>
-
-        {/* Notifications & Location */}
-        <View className="bg-white dark:bg-gray-800 rounded-lg mx-4 mt-4 shadow-sm">
-          <View className="p-4">
-            <Text className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              Notifications & Location
-            </Text>
             <SettingItem
               icon="notifications-outline"
               title="Allow Notifications"
@@ -137,15 +128,6 @@ const SettingsScreen = () => {
               value={settings.locationTracking}
               onValueChange={(value) => updateSetting("locationTracking", value)}
             />
-          </View>
-        </View>
-
-        {/* App Settings */}
-        <View className="bg-white dark:bg-gray-800 rounded-lg mx-4 mt-4 shadow-sm">
-          <View className="p-4">
-            <Text className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              App Settings
-            </Text>
             <SettingItem
               icon="moon-outline"
               title="Dark Mode"

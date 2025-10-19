@@ -7,6 +7,7 @@ export interface Driver {
   email: string;
   name: string;
   phone?: string;
+  idCard?: string;
   organizationId: number;
   isActive: boolean;
 }

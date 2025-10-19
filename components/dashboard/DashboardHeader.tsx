@@ -1,6 +1,8 @@
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
+import { useNotificationsStore } from "../../src/stores/notificationsStore";
 
 interface DashboardHeaderProps {
   title: string;
@@ -15,6 +17,12 @@ export function DashboardHeader({
   onToggleNotifications,
   showNotifications = true,
 }: DashboardHeaderProps) {
+  const router = useRouter();
+  const { unreadCount } = useNotificationsStore();
+
+  const handleNotificationsPress = () => {
+    router.push("/dashboard/notifications" as any);
+  };
   return (
     <View className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
       <View className="flex-row items-center justify-between">
@@ -30,7 +38,7 @@ export function DashboardHeader({
           {/* Notifications */}
           {showNotifications && (
             <TouchableOpacity
-              onPress={onToggleNotifications}
+              onPress={handleNotificationsPress}
               className="relative p-2 rounded-full bg-gray-100 dark:bg-gray-700"
             >
               <Ionicons
@@ -38,8 +46,10 @@ export function DashboardHeader({
                 size={24}
                 color={notificationsOpen ? "#EC1F81" : "#6B7280"}
               />
-              {/* Notification badge - you can add logic to show/hide based on notifications */}
-              <View className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
+              {/* Notification badge - show only if there are unread notifications */}
+              {unreadCount > 0 && (
+                <View className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
+              )}
             </TouchableOpacity>
           )}
 
