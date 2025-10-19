@@ -10,15 +10,38 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.hiresprint.shuttle"
+      "bundleIdentifier": "com.hiresprint.shuttle",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to scan QR codes.",
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show your current location.",
+        "NSLocationAlwaysUsageDescription": "This app needs access to your location to show your current location.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location to show your current location.",
+        "NSLocationUsageDescription": "This app needs access to your location to show your current location."
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDTjhqMf2Oc_1E9fJkoiSGyKBhK1AFSuW0"
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION"
+      ],
       "edgeToEdgeEnabled": true,
-      "package": "com.hiresprint.shuttle"
+      "package": "com.hiresprint.shuttle",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDTjhqMf2Oc_1E9fJkoiSGyKBhK1AFSuW0"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
