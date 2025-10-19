@@ -1,8 +1,8 @@
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
-import React from 'react';
-import { Alert, Text, TouchableOpacity, View } from 'react-native';
-import { useDriverAuthStore } from '../../src/stores/driverAuthStore';
+import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
+import React from "react";
+import { Alert, Text, TouchableOpacity, View } from "react-native";
+import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
 
 interface DashboardHeaderProps {
   title: string;
@@ -21,21 +21,17 @@ export function DashboardHeader({
   const { logout } = useDriverAuthStore();
 
   const handleLogout = () => {
-    Alert.alert(
-      'Sign Out',
-      'Are you sure you want to sign out?',
-      [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Sign Out',
-          style: 'destructive',
-          onPress: () => {
-            logout();
-            router.replace('/auth/login');
-          },
+    Alert.alert("Sign Out", "Are you sure you want to sign out?", [
+      { text: "Cancel", style: "cancel" },
+      {
+        text: "Sign Out",
+        style: "destructive",
+        onPress: () => {
+          logout();
+          router.replace("/auth/login");
         },
-      ]
-    );
+      },
+    ]);
   };
   return (
     <View className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
@@ -58,7 +54,7 @@ export function DashboardHeader({
               <Ionicons
                 name="notifications-outline"
                 size={24}
-                color={notificationsOpen ? '#EC1F81' : '#6B7280'}
+                color={notificationsOpen ? "#EC1F81" : "#6B7280"}
               />
               {/* Notification badge - you can add logic to show/hide based on notifications */}
               <View className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
@@ -70,11 +66,7 @@ export function DashboardHeader({
             onPress={handleLogout}
             className="p-2 rounded-full bg-gray-100 dark:bg-gray-700"
           >
-            <Ionicons
-              name="log-out-outline"
-              size={24}
-              color="#6B7280"
-            />
+            <Ionicons name="log-out-outline" size={24} color="#6B7280" />
           </TouchableOpacity>
         </View>
       </View>

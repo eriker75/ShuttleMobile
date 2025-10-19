@@ -1,4 +1,4 @@
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { DashboardLayout } from "../../components/dashboard";
@@ -17,10 +17,10 @@ const DriverProfileScreen = () => {
               <Ionicons name="person" size={40} color="#6B7280" />
             </View>
             <Text className="text-xl font-bold text-gray-900 dark:text-white">
-              {driverProfile?.name || 'Driver Name'}
+              {driverProfile?.name || "Driver Name"}
             </Text>
             <Text className="text-gray-600 dark:text-gray-400">
-              {driverProfile?.email || 'driver@example.com'}
+              {driverProfile?.email || "driver@example.com"}
             </Text>
             {driverProfile?.phone && (
               <Text className="text-gray-600 dark:text-gray-400 text-sm mt-1">
@@ -38,7 +38,9 @@ const DriverProfileScreen = () => {
             </Text>
             <View className="space-y-2">
               <View className="flex-row justify-between">
-                <Text className="text-gray-600 dark:text-gray-400">Make & Model:</Text>
+                <Text className="text-gray-600 dark:text-gray-400">
+                  Make & Model:
+                </Text>
                 <Text className="text-gray-900 dark:text-white font-medium">
                   {driverVehicle.make} {driverVehicle.model}
                 </Text>
@@ -50,7 +52,9 @@ const DriverProfileScreen = () => {
                 </Text>
               </View>
               <View className="flex-row justify-between">
-                <Text className="text-gray-600 dark:text-gray-400">License Plate:</Text>
+                <Text className="text-gray-600 dark:text-gray-400">
+                  License Plate:
+                </Text>
                 <Text className="text-gray-900 dark:text-white font-medium">
                   {driverVehicle.licensePlate}
                 </Text>
@@ -62,7 +66,9 @@ const DriverProfileScreen = () => {
                 </Text>
               </View>
               <View className="flex-row justify-between">
-                <Text className="text-gray-600 dark:text-gray-400">Capacity:</Text>
+                <Text className="text-gray-600 dark:text-gray-400">
+                  Capacity:
+                </Text>
                 <Text className="text-gray-900 dark:text-white font-medium">
                   {driverVehicle.capacity} passengers
                 </Text>
@@ -76,7 +82,9 @@ const DriverProfileScreen = () => {
           <TouchableOpacity className="flex-row items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
             <View className="flex-row items-center">
               <Ionicons name="person-outline" size={24} color="#6B7280" />
-              <Text className="ml-3 text-gray-900 dark:text-white">Edit Profile</Text>
+              <Text className="ml-3 text-gray-900 dark:text-white">
+                Edit Profile
+              </Text>
             </View>
             <Ionicons name="chevron-forward" size={20} color="#6B7280" />
           </TouchableOpacity>
@@ -84,7 +92,9 @@ const DriverProfileScreen = () => {
           <TouchableOpacity className="flex-row items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
             <View className="flex-row items-center">
               <Ionicons name="settings-outline" size={24} color="#6B7280" />
-              <Text className="ml-3 text-gray-900 dark:text-white">Settings</Text>
+              <Text className="ml-3 text-gray-900 dark:text-white">
+                Settings
+              </Text>
             </View>
             <Ionicons name="chevron-forward" size={20} color="#6B7280" />
           </TouchableOpacity>
@@ -92,7 +102,9 @@ const DriverProfileScreen = () => {
           <TouchableOpacity className="flex-row items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
             <View className="flex-row items-center">
               <Ionicons name="help-circle-outline" size={24} color="#6B7280" />
-              <Text className="ml-3 text-gray-900 dark:text-white">Help & Support</Text>
+              <Text className="ml-3 text-gray-900 dark:text-white">
+                Help & Support
+              </Text>
             </View>
             <Ionicons name="chevron-forward" size={20} color="#6B7280" />
           </TouchableOpacity>

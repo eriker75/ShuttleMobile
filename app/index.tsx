@@ -9,9 +9,9 @@ export default function Index() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      router.replace('/dashboard/tripRequests');
+      router.replace("/dashboard/tripRequests");
     } else {
-      router.replace('/auth/login');
+      router.replace("/auth/login");
     }
   }, [isAuthenticated, router]);
 

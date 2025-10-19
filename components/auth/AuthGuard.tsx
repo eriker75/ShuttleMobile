@@ -1,7 +1,7 @@
-import { useRouter } from 'expo-router';
-import React, { useEffect } from 'react';
-import { ActivityIndicator, View } from 'react-native';
-import { useDriverAuthStore } from '../../src/stores/driverAuthStore';
+import { useRouter } from "expo-router";
+import React, { useEffect } from "react";
+import { ActivityIndicator, View } from "react-native";
+import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
 
 interface AuthGuardProps {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ export function AuthGuard({ children }: AuthGuardProps) {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      router.replace('/auth/login');
+      router.replace("/auth/login");
     }
   }, [isAuthenticated, router]);
 

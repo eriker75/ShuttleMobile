@@ -1,7 +1,7 @@
-import { Ionicons } from '@expo/vector-icons';
-import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
-import { DashboardLayout } from '../../components/dashboard';
+import { Ionicons } from "@expo/vector-icons";
+import React from "react";
+import { Text, TouchableOpacity, View } from "react-native";
+import { DashboardLayout } from "../../components/dashboard";
 
 const DashboardHomeScreen = () => {
   return (
@@ -12,9 +12,7 @@ const DashboardHomeScreen = () => {
           <Text className="text-white text-xl font-bold mb-2">
             Welcome back, Driver!
           </Text>
-          <Text className="text-white/90">
-            Ready to start your next trip?
-          </Text>
+          <Text className="text-white/90">Ready to start your next trip?</Text>
         </View>
 
         {/* Stats Cards */}

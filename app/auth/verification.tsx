@@ -1,21 +1,28 @@
-import { Ionicons } from '@expo/vector-icons';
-import { useLocalSearchParams, useRouter } from 'expo-router';
-import React, { useEffect, useState } from 'react';
-import { ActivityIndicator, Alert, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { useDriverAuthStore } from '../../src/stores/driverAuthStore';
+import { Ionicons } from "@expo/vector-icons";
+import { useLocalSearchParams, useRouter } from "expo-router";
+import React, { useEffect, useState } from "react";
+import {
+  ActivityIndicator,
+  Alert,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
 
 const DriverVerificationScreen = () => {
   const router = useRouter();
   const params = useLocalSearchParams();
   const { login } = useDriverAuthStore();
 
-  const [code, setCode] = useState('');
+  const [code, setCode] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [timeLeft, setTimeLeft] = useState(300); // 5 minutes
   const [canResend, setCanResend] = useState(false);
 
-  const userEmail = params.email as string || 'driverUser';
+  const userEmail = (params.email as string) || "driverUser";
 
   // Timer for resend code
   useEffect(() => {
@@ -29,7 +36,7 @@ const DriverVerificationScreen = () => {
 
   const handleVerifyCode = async () => {
     if (!code.trim() || code.length !== 6) {
-      Alert.alert('Error', 'Please enter a valid 6-digit code');
+      Alert.alert("Error", "Please enter a valid 6-digit code");
       return;
     }
 
@@ -37,17 +44,18 @@ const DriverVerificationScreen = () => {
 
     try {
       // Simulate code verification - any 6-digit code works for demo
-      const success = await login(userEmail, '1234');
+      const success = await login(userEmail, "1234");
 
       if (success) {
-        Alert.alert('Success', 'Verification successful!', [
-          { text: 'OK', onPress: () => router.replace('/dashboard') }
+        Alert.alert("Success", "Verification successful!", [
+          { text: "OK", onPress: () => router.replace("/dashboard") },
         ]);
       } else {
-        Alert.alert('Error', 'Invalid verification code');
+        Alert.alert("Error", "Invalid verification code");
       }
     } catch (error) {
-      Alert.alert('Error', 'Verification failed. Please try again.');
+      console.log(error);
+      Alert.alert("Error", "Verification failed. Please try again.");
     } finally {
       setIsLoading(false);
     }
@@ -58,13 +66,13 @@ const DriverVerificationScreen = () => {
 
     setTimeLeft(300);
     setCanResend(false);
-    Alert.alert('Code Sent', `Verification code sent to ${userEmail}`);
+    Alert.alert("Code Sent", `Verification code sent to ${userEmail}`);
   };
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
+    return `${mins}:${secs.toString().padStart(2, "0")}`;
   };
 
   return (
@@ -112,16 +120,20 @@ const DriverVerificationScreen = () => {
             onPress={handleVerifyCode}
             disabled={isLoading || code.length !== 6}
             className={`bg-[#EC1F81] rounded-lg py-4 items-center mb-4 ${
-              isLoading || code.length !== 6 ? 'opacity-50' : ''
+              isLoading || code.length !== 6 ? "opacity-50" : ""
             }`}
           >
             {isLoading ? (
               <View className="flex-row items-center">
                 <ActivityIndicator size="small" color="white" />
-                <Text className="text-white font-semibold ml-2">Verifying...</Text>
+                <Text className="text-white font-semibold ml-2">
+                  Verifying...
+                </Text>
               </View>
             ) : (
-              <Text className="text-white font-semibold text-lg">Verify Code</Text>
+              <Text className="text-white font-semibold text-lg">
+                Verify Code
+              </Text>
             )}
           </TouchableOpacity>
 

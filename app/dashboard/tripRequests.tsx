@@ -1,6 +1,6 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import { DashboardLayout } from '../../components/dashboard';
+import React from "react";
+import { Text, View } from "react-native";
+import { DashboardLayout } from "../../components/dashboard";
 
 const DriverTripRequestsScreen = () => {
   return (

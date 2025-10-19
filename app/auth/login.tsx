@@ -1,22 +1,29 @@
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
-import React, { useState } from 'react';
-import { ActivityIndicator, Alert, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { useDriverAuthStore } from '../../src/stores/driverAuthStore';
+import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
+import React, { useState } from "react";
+import {
+  ActivityIndicator,
+  Alert,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
 
 const DriverLoginScreen = () => {
   const router = useRouter();
   const { login } = useDriverAuthStore();
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = async () => {
     if (!email.trim() || !password.trim()) {
-      Alert.alert('Error', 'Please fill in all fields');
+      Alert.alert("Error", "Please fill in all fields");
       return;
     }
 
@@ -26,14 +33,15 @@ const DriverLoginScreen = () => {
       const success = await login(email.trim(), password.trim());
 
       if (success) {
-        Alert.alert('Success', 'Login successful!', [
-          { text: 'OK', onPress: () => router.replace('/dashboard') }
+        Alert.alert("Success", "Login successful!", [
+          { text: "OK", onPress: () => router.replace("/dashboard") },
         ]);
       } else {
-        Alert.alert('Error', 'Invalid email or password');
+        Alert.alert("Error", "Invalid email or password");
       }
     } catch (error) {
-      Alert.alert('Error', 'Login failed. Please try again.');
+      console.log(error);
+      Alert.alert("Error", "Login failed. Please try again.");
     } finally {
       setIsLoading(false);
     }
@@ -63,7 +71,9 @@ const DriverLoginScreen = () => {
 
           {/* Email Input */}
           <View className="mb-4">
-            <Text className="text-gray-700 dark:text-gray-300 text-sm mb-2">Email</Text>
+            <Text className="text-gray-700 dark:text-gray-300 text-sm mb-2">
+              Email
+            </Text>
             <View className="flex-row items-center border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-3">
               <Ionicons name="mail-outline" size={20} color="#6B7280" />
               <TextInput
@@ -81,7 +91,9 @@ const DriverLoginScreen = () => {
 
           {/* Password Input */}
           <View className="mb-6">
-            <Text className="text-gray-700 dark:text-gray-300 text-sm mb-2">Password</Text>
+            <Text className="text-gray-700 dark:text-gray-300 text-sm mb-2">
+              Password
+            </Text>
             <View className="flex-row items-center border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-3">
               <Ionicons name="lock-closed-outline" size={20} color="#6B7280" />
               <TextInput
@@ -112,13 +124,15 @@ const DriverLoginScreen = () => {
             onPress={handleLogin}
             disabled={isLoading}
             className={`bg-[#EC1F81] rounded-lg py-4 items-center ${
-              isLoading ? 'opacity-50' : ''
+              isLoading ? "opacity-50" : ""
             }`}
           >
             {isLoading ? (
               <View className="flex-row items-center">
                 <ActivityIndicator size="small" color="white" />
-                <Text className="text-white font-semibold ml-2">Signing in...</Text>
+                <Text className="text-white font-semibold ml-2">
+                  Signing in...
+                </Text>
               </View>
             ) : (
               <Text className="text-white font-semibold text-lg">Sign In</Text>
