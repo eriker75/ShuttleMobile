@@ -87,9 +87,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.eribert.helloappsupabase'
+    namespace 'com.hiresprint.shuttle'
     defaultConfig {
-        applicationId 'com.eribert.helloappsupabase'
+        applicationId 'com.hiresprint.shuttle'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

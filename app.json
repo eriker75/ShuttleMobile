@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "helloappsupabase",
-    "slug": "helloappsupabase",
+    "slug": "hiresprintshuttle",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,7 +10,7 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.eribert.helloappsupabase"
+      "bundleIdentifier": "com.hiresprint.shuttle"
     },
     "android": {
       "adaptiveIcon": {
@@ -18,7 +18,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.eribert.helloappsupabase"
+      "package": "com.hiresprint.shuttle"
     },
     "web": {
       "bundler": "metro",
@@ -39,6 +39,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d5b4a550-cb17-4da2-9f34-b0e24545f041"
+      }
+    },
+    "owner": "eribert"
   }
 }

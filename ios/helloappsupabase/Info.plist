@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>helloappsupabase</string>
-          <string>com.eribert.helloappsupabase</string>
+          <string>com.hiresprint.shuttle</string>
         </array>
       </dict>
     </array>

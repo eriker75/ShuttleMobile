@@ -1,4 +1,4 @@
-package com.eribert.helloappsupabase
+package com.hiresprint.shuttle
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

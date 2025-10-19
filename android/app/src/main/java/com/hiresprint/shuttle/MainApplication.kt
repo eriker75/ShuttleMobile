@@ -1,4 +1,4 @@
-package com.eribert.helloappsupabase
+package com.hiresprint.shuttle
 
 import android.app.Application
 import android.content.res.Configuration
