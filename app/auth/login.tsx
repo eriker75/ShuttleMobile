@@ -34,7 +34,7 @@ const DriverLoginScreen = () => {
 
       if (success) {
         Alert.alert("Success", "Login successful!", [
-          { text: "OK", onPress: () => router.replace("/dashboard") },
+          { text: "OK", onPress: () => router.push("/dashboard" as any) },
         ]);
       } else {
         Alert.alert("Error", "Invalid email or password");
@@ -51,7 +51,7 @@ const DriverLoginScreen = () => {
     <SafeAreaView className="flex-1 bg-gray-50 dark:bg-gray-900">
       <View className="flex-1 justify-center items-center px-6">
         {/* Logo Section */}
-        <View className="w-full max-w-sm mb-8">
+        <View className="w-full max-w-sm">
           <View className="bg-black rounded-t-3xl p-8 items-center justify-center h-32">
             <View className="w-24 h-24 bg-white rounded-lg items-center justify-center">
               <Ionicons name="car" size={48} color="#EC1F81" />
@@ -60,7 +60,7 @@ const DriverLoginScreen = () => {
         </View>
 
         {/* Login Form */}
-        <View className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm p-8">
+        <View className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-sm p-8 -mt-1">
           <Text className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
             Driver Access
           </Text>
@@ -139,24 +139,12 @@ const DriverLoginScreen = () => {
             )}
           </TouchableOpacity>
 
-          {/* Demo Credentials */}
-          <View className="mt-6 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-            <Text className="text-gray-600 dark:text-gray-400 text-sm text-center mb-2">
-              Demo Credentials:
-            </Text>
-            <Text className="text-gray-800 dark:text-gray-200 text-sm text-center font-medium">
-              Email: driverUser
-            </Text>
-            <Text className="text-gray-800 dark:text-gray-200 text-sm text-center font-medium">
-              Password: 1234
-            </Text>
-          </View>
         </View>
 
         {/* Footer */}
         <View className="mt-8">
           <Text className="text-gray-500 dark:text-gray-400 text-xs text-center">
-            Shuttle Mobile Driver App
+            Powered by xCirculars
           </Text>
         </View>
       </View>
