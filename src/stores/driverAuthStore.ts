@@ -20,6 +20,7 @@ export interface Vehicle {
   licensePlate: string;
   color: string;
   capacity: number;
+  isActive?: boolean;
 }
 
 export interface DriverAuthState {
@@ -123,6 +124,7 @@ const driverAuthStoreCreator = (set: any, get: any): DriverAuthStore => ({
             licensePlate: "ABC-123",
             color: "White",
             capacity: 4,
+            isActive: true,
           };
 
           set((state: DriverAuthState) => ({

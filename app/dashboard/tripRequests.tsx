@@ -15,14 +15,6 @@ const DriverTripRequestsScreen = () => {
           </Text>
         </View>
 
-        <View className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
-          <Text className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-            Recent Trips
-          </Text>
-          <Text className="text-gray-600 dark:text-gray-400">
-            Your recent trip history will appear here.
-          </Text>
-        </View>
       </View>
     </DashboardLayout>
   );

@@ -10,9 +10,12 @@ export default function DashboardLayout() {
           headerShown: false,
         }}
       >
-        <Stack.Screen name="index" />
         <Stack.Screen name="tripRequests" />
         <Stack.Screen name="profile" />
+        <Stack.Screen name="editProfile" />
+        <Stack.Screen name="editVehicle" />
+        <Stack.Screen name="settings" />
+        <Stack.Screen name="helpSupport" />
       </Stack>
     </AuthGuard>
   );

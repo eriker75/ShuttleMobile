@@ -1,8 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
-import { useRouter } from "expo-router";
 import React from "react";
-import { Alert, Text, TouchableOpacity, View } from "react-native";
-import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
+import { Text, TouchableOpacity, View } from "react-native";
 
 interface DashboardHeaderProps {
   title: string;
@@ -17,22 +15,6 @@ export function DashboardHeader({
   onToggleNotifications,
   showNotifications = true,
 }: DashboardHeaderProps) {
-  const router = useRouter();
-  const { logout } = useDriverAuthStore();
-
-  const handleLogout = () => {
-    Alert.alert("Sign Out", "Are you sure you want to sign out?", [
-      { text: "Cancel", style: "cancel" },
-      {
-        text: "Sign Out",
-        style: "destructive",
-        onPress: () => {
-          logout();
-          router.replace("/auth/login");
-        },
-      },
-    ]);
-  };
   return (
     <View className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
       <View className="flex-row items-center justify-between">
@@ -61,13 +43,6 @@ export function DashboardHeader({
             </TouchableOpacity>
           )}
 
-          {/* Profile/Menu button */}
-          <TouchableOpacity
-            onPress={handleLogout}
-            className="p-2 rounded-full bg-gray-100 dark:bg-gray-700"
-          >
-            <Ionicons name="log-out-outline" size={24} color="#6B7280" />
-          </TouchableOpacity>
         </View>
       </View>
     </View>
