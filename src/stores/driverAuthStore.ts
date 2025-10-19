@@ -1,5 +1,6 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
 
 // Types for Driver and Vehicle (simplified for mobile)
 export interface Driver {
@@ -148,5 +149,6 @@ const driverAuthStoreCreator = (set: any, get: any): DriverAuthStore => ({
 export const useDriverAuthStore = create<DriverAuthStore>()(
   persist(driverAuthStoreCreator, {
     name: "auth-driver-profile-store",
+    storage: createJSONStorage(() => AsyncStorage),
   })
 );

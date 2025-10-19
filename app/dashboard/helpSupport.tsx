@@ -11,7 +11,6 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { MobileNavigation } from "../../components/dashboard/MobileNavigation";
 
 const HelpSupportScreen = () => {
   const router = useRouter();
@@ -236,8 +235,6 @@ const HelpSupportScreen = () => {
 
       </ScrollView>
 
-      {/* Mobile Navigation */}
-      <MobileNavigation />
     </SafeAreaView>
   );
 };

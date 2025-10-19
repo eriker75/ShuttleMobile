@@ -1,5 +1,6 @@
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
 
 export interface Notification {
   id: string;
@@ -138,5 +139,6 @@ const notificationsStoreCreator = (set: any, get: any): NotificationsStore => ({
 export const useNotificationsStore = create<NotificationsStore>()(
   persist(notificationsStoreCreator, {
     name: "notifications-store",
+    storage: createJSONStorage(() => AsyncStorage),
   })
 );

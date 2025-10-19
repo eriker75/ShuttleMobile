@@ -9,7 +9,6 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { MobileNavigation } from "../../../../components/dashboard/MobileNavigation";
 import { Notification, useNotificationsStore } from "../../../../src/stores/notificationsStore";
 
 const NotificationDetailScreen = () => {
@@ -208,8 +207,6 @@ const NotificationDetailScreen = () => {
         </View>
       </ScrollView>
 
-      {/* Mobile Navigation */}
-      <MobileNavigation />
     </SafeAreaView>
   );
 };

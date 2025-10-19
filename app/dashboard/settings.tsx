@@ -9,7 +9,6 @@ import {
   View
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { MobileNavigation } from "../../components/dashboard/MobileNavigation";
 import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
 
 const SettingsScreen = () => {
@@ -150,8 +149,6 @@ const SettingsScreen = () => {
         </View>
       </ScrollView>
 
-      {/* Mobile Navigation */}
-      <MobileNavigation />
     </SafeAreaView>
   );
 };

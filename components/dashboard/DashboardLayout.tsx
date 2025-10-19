@@ -3,7 +3,6 @@ import { ActivityIndicator, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useDriverAuthStore } from "../../src/stores/driverAuthStore";
 import { DashboardHeader } from "./DashboardHeader";
-import { MobileNavigation } from "./MobileNavigation";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -54,14 +53,11 @@ export function DashboardLayout({
       {/* Main Content */}
       <ScrollView
         className="flex-1 px-4"
-        contentContainerStyle={{ paddingBottom: 100 }}
+        contentContainerStyle={{ paddingBottom: 20 }}
         showsVerticalScrollIndicator={false}
       >
         {children}
       </ScrollView>
-
-      {/* Mobile Navigation */}
-      <MobileNavigation />
     </SafeAreaView>
   );
 }
