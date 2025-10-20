@@ -11,25 +11,25 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		688AB5FE24D349FAE1792D10 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0077D33BC699187E16F06C02 /* PrivacyInfo.xcprivacy */; };
 		A0D07DD8C120EA6D33050DB8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8F956302B31646A24D7DF /* ExpoModulesProvider.swift */; };
-		A406EED240AA340DB99A6007 /* libPods-helloappsupabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BF299DFC809B88B2108A90 /* libPods-helloappsupabase.a */; };
+		A406EED240AA340DB99A6007 /* libPods-hiresprint_shuttle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BF299DFC809B88B2108A90 /* libPods-hiresprint_shuttle.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0077D33BC699187E16F06C02 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = helloappsupabase/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		06B2F1AC2032DB2E22E2D817 /* Pods-helloappsupabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloappsupabase.debug.xcconfig"; path = "Target Support Files/Pods-helloappsupabase/Pods-helloappsupabase.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* helloappsupabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloappsupabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = helloappsupabase/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = helloappsupabase/Info.plist; sourceTree = "<group>"; };
-		33BF299DFC809B88B2108A90 /* libPods-helloappsupabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-helloappsupabase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57F8F956302B31646A24D7DF /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-helloappsupabase/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		9EB75F7843042605DEE08115 /* Pods-helloappsupabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloappsupabase.release.xcconfig"; path = "Target Support Files/Pods-helloappsupabase/Pods-helloappsupabase.release.xcconfig"; sourceTree = "<group>"; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = helloappsupabase/SplashScreen.storyboard; sourceTree = "<group>"; };
+		0077D33BC699187E16F06C02 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = hiresprint_shuttle/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		06B2F1AC2032DB2E22E2D817 /* Pods-hiresprint_shuttle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiresprint_shuttle.debug.xcconfig"; path = "Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* hiresprint_shuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hiresprint_shuttle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hiresprint_shuttle/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hiresprint_shuttle/Info.plist; sourceTree = "<group>"; };
+		33BF299DFC809B88B2108A90 /* libPods-hiresprint_shuttle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hiresprint_shuttle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F8F956302B31646A24D7DF /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-hiresprint_shuttle/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		9EB75F7843042605DEE08115 /* Pods-hiresprint_shuttle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiresprint_shuttle.release.xcconfig"; path = "Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle.release.xcconfig"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = hiresprint_shuttle/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = helloappsupabase/AppDelegate.swift; sourceTree = "<group>"; };
-		F11748442D0722820044C1D9 /* helloappsupabase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "helloappsupabase-Bridging-Header.h"; path = "helloappsupabase/helloappsupabase-Bridging-Header.h"; sourceTree = "<group>"; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = hiresprint_shuttle/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* hiresprint_shuttle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hiresprint_shuttle-Bridging-Header.h"; path = "hiresprint_shuttle/hiresprint_shuttle-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,32 +37,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A406EED240AA340DB99A6007 /* libPods-helloappsupabase.a in Frameworks */,
+				A406EED240AA340DB99A6007 /* libPods-hiresprint_shuttle.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* helloappsupabase */ = {
+		13B07FAE1A68108700A75B9A /* hiresprint_shuttle */ = {
 			isa = PBXGroup;
 			children = (
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
-				F11748442D0722820044C1D9 /* helloappsupabase-Bridging-Header.h */,
+				F11748442D0722820044C1D9 /* hiresprint_shuttle-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				0077D33BC699187E16F06C02 /* PrivacyInfo.xcprivacy */,
 			);
-			name = helloappsupabase;
+			name = hiresprint_shuttle;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				33BF299DFC809B88B2108A90 /* libPods-helloappsupabase.a */,
+				33BF299DFC809B88B2108A90 /* libPods-hiresprint_shuttle.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,7 +70,7 @@
 		652A6351CD106719105F14C3 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				CA008929C32AF569EC5D6876 /* helloappsupabase */,
+				CA008929C32AF569EC5D6876 /* hiresprint_shuttle */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* helloappsupabase */,
+				13B07FAE1A68108700A75B9A /* hiresprint_shuttle */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -100,7 +100,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* helloappsupabase.app */,
+				13B07F961A680F5B00A75B9A /* hiresprint_shuttle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,8 +108,8 @@
 		AABC853471712C49C2B767B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				06B2F1AC2032DB2E22E2D817 /* Pods-helloappsupabase.debug.xcconfig */,
-				9EB75F7843042605DEE08115 /* Pods-helloappsupabase.release.xcconfig */,
+				06B2F1AC2032DB2E22E2D817 /* Pods-hiresprint_shuttle.debug.xcconfig */,
+				9EB75F7843042605DEE08115 /* Pods-hiresprint_shuttle.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -121,23 +121,23 @@
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
 			);
 			name = Supporting;
-			path = helloappsupabase/Supporting;
+			path = hiresprint_shuttle/Supporting;
 			sourceTree = "<group>";
 		};
-		CA008929C32AF569EC5D6876 /* helloappsupabase */ = {
+		CA008929C32AF569EC5D6876 /* hiresprint_shuttle */ = {
 			isa = PBXGroup;
 			children = (
 				57F8F956302B31646A24D7DF /* ExpoModulesProvider.swift */,
 			);
-			name = helloappsupabase;
+			name = hiresprint_shuttle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* helloappsupabase */ = {
+		13B07F861A680F5B00A75B9A /* hiresprint_shuttle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "helloappsupabase" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hiresprint_shuttle" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
 				BE48CB8A2CBF4554A8C31F90 /* [Expo] Configure project */,
@@ -152,9 +152,9 @@
 			);
 			dependencies = (
 			);
-			name = helloappsupabase;
-			productName = helloappsupabase;
-			productReference = 13B07F961A680F5B00A75B9A /* helloappsupabase.app */;
+			name = hiresprint_shuttle;
+			productName = hiresprint_shuttle;
+			productReference = 13B07F961A680F5B00A75B9A /* hiresprint_shuttle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "helloappsupabase" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hiresprint_shuttle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* helloappsupabase */,
+				13B07F861A680F5B00A75B9A /* hiresprint_shuttle */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +233,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-helloappsupabase-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-hiresprint_shuttle-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -246,7 +246,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-helloappsupabase/Pods-helloappsupabase-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -255,7 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloappsupabase/Pods-helloappsupabase-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
@@ -264,7 +264,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-helloappsupabase/Pods-helloappsupabase-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
@@ -293,7 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloappsupabase/Pods-helloappsupabase-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE48CB8A2CBF4554A8C31F90 /* [Expo] Configure project */ = {
@@ -313,7 +313,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-helloappsupabase/expo-configure-project.sh\"\n";
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-hiresprint_shuttle/expo-configure-project.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -332,18 +332,18 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06B2F1AC2032DB2E22E2D817 /* Pods-helloappsupabase.debug.xcconfig */;
+			baseConfigurationReference = 06B2F1AC2032DB2E22E2D817 /* Pods-hiresprint_shuttle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = helloappsupabase/helloappsupabase.entitlements;
+				CODE_SIGN_ENTITLEMENTS = hiresprint_shuttle/hiresprint_shuttle.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = helloappsupabase/Info.plist;
+				INFOPLIST_FILE = hiresprint_shuttle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,8 +357,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiresprint.shuttle;
-				PRODUCT_NAME = helloappsupabase;
-				SWIFT_OBJC_BRIDGING_HEADER = "helloappsupabase/helloappsupabase-Bridging-Header.h";
+				PRODUCT_NAME = hiresprint_shuttle;
+				SWIFT_OBJC_BRIDGING_HEADER = "hiresprint_shuttle/hiresprint_shuttle-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,13 +368,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EB75F7843042605DEE08115 /* Pods-helloappsupabase.release.xcconfig */;
+			baseConfigurationReference = 9EB75F7843042605DEE08115 /* Pods-hiresprint_shuttle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = helloappsupabase/helloappsupabase.entitlements;
+				CODE_SIGN_ENTITLEMENTS = hiresprint_shuttle/hiresprint_shuttle.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = helloappsupabase/Info.plist;
+				INFOPLIST_FILE = hiresprint_shuttle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,8 +388,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiresprint.shuttle;
-				PRODUCT_NAME = helloappsupabase;
-				SWIFT_OBJC_BRIDGING_HEADER = "helloappsupabase/helloappsupabase-Bridging-Header.h";
+				PRODUCT_NAME = hiresprint_shuttle;
+				SWIFT_OBJC_BRIDGING_HEADER = "hiresprint_shuttle/hiresprint_shuttle-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,7 +523,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "helloappsupabase" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hiresprint_shuttle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -532,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "helloappsupabase" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hiresprint_shuttle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

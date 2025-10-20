@@ -27,7 +27,7 @@ export function DashboardLayout({
   // Show loading state
   if (isLoading || !isAuthenticated) {
     return (
-      <SafeAreaView className="flex-1 bg-gray-50 dark:bg-gray-900">
+      <SafeAreaView className="flex-1 bg-gray-50 dark:bg-gray-900" edges={['top', 'left', 'right']}>
         <View className="flex-1 items-center justify-center">
           <ActivityIndicator size="large" color="#EC1F81" />
           <View className="mt-4">
@@ -41,7 +41,7 @@ export function DashboardLayout({
   }
 
   return (
-    <SafeAreaView className="flex-1 bg-gray-50 dark:bg-gray-900">
+    <SafeAreaView className="flex-1 bg-gray-50 dark:bg-gray-900 pb-2" edges={['top', 'left', 'right']}>
       {/* Header */}
       <DashboardHeader
         title={title}
@@ -53,7 +53,7 @@ export function DashboardLayout({
       {/* Main Content */}
       <ScrollView
         className="flex-1 px-4"
-        contentContainerStyle={{ paddingBottom: 10 }} // Padding to account for tab bar height (80px) + small gap
+        contentContainerStyle={{ paddingBottom: 0 }}
         showsVerticalScrollIndicator={false}
       >
         {children}

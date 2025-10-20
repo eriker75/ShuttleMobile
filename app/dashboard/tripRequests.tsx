@@ -16,23 +16,24 @@ import { VStack } from "../../components/ui/vstack";
 
 const { height: screenHeight } = Dimensions.get("window");
 
-// Sample trip request data with random coordinates
+// Sample trip request data with New York coordinates
 const sampleTripRequests = [
   {
     id: "1",
-    customerName: "María González",
+    customerName: "Sarah Johnson",
+    phoneNumber: "+1 (555) 123-4567",
     pickupLocation: {
-      latitude: 19.4326 + (Math.random() - 0.5) * 0.1,
-      longitude: -99.1332 + (Math.random() - 0.5) * 0.1,
-      address: "Av. Reforma 123, Ciudad de México",
+      latitude: 40.7589 + (Math.random() - 0.5) * 0.01,
+      longitude: -73.9851 + (Math.random() - 0.5) * 0.01,
+      address: "Times Square, New York, NY",
     },
     destination: {
-      latitude: 19.4326 + (Math.random() - 0.5) * 0.1,
-      longitude: -99.1332 + (Math.random() - 0.5) * 0.1,
-      address: "Polanco, Ciudad de México",
+      latitude: 40.7505 + (Math.random() - 0.5) * 0.01,
+      longitude: -73.9934 + (Math.random() - 0.5) * 0.01,
+      address: "Central Park, New York, NY",
     },
-    distance: "5.3 mi",
-    estimatedTime: "18 min",
+    distance: "1.2 mi",
+    estimatedTime: "8 min",
     requestTime: "2 min ago",
     pickupTime: "2024-01-15 14:30:00",
     status: "pending",
@@ -40,19 +41,20 @@ const sampleTripRequests = [
   },
   {
     id: "2",
-    customerName: "Carlos Rodríguez",
+    customerName: "Michael Chen",
+    phoneNumber: "+1 (555) 234-5678",
     pickupLocation: {
-      latitude: 19.4326 + (Math.random() - 0.5) * 0.1,
-      longitude: -99.1332 + (Math.random() - 0.5) * 0.1,
-      address: "Centro Histórico, CDMX",
+      latitude: 40.7614 + (Math.random() - 0.5) * 0.01,
+      longitude: -73.9776 + (Math.random() - 0.5) * 0.01,
+      address: "Brooklyn Bridge, New York, NY",
     },
     destination: {
-      latitude: 19.4326 + (Math.random() - 0.5) * 0.1,
-      longitude: -99.1332 + (Math.random() - 0.5) * 0.1,
-      address: "Aeropuerto Internacional",
+      latitude: 40.6892 + (Math.random() - 0.5) * 0.01,
+      longitude: -74.0445 + (Math.random() - 0.5) * 0.01,
+      address: "Statue of Liberty, New York, NY",
     },
-    distance: "9.4 mi",
-    estimatedTime: "28 min",
+    distance: "3.8 mi",
+    estimatedTime: "15 min",
     requestTime: "5 min ago",
     pickupTime: "2024-01-15 15:00:00",
     status: "pending",
@@ -60,19 +62,20 @@ const sampleTripRequests = [
   },
   {
     id: "3",
-    customerName: "Ana Martínez",
+    customerName: "Emily Rodriguez",
+    phoneNumber: "+1 (555) 345-6789",
     pickupLocation: {
-      latitude: 19.4326 + (Math.random() - 0.5) * 0.1,
-      longitude: -99.1332 + (Math.random() - 0.5) * 0.1,
-      address: "Coyoacán, Ciudad de México",
+      latitude: 40.7505 + (Math.random() - 0.5) * 0.01,
+      longitude: -73.9934 + (Math.random() - 0.5) * 0.01,
+      address: "Central Park, New York, NY",
     },
     destination: {
-      latitude: 19.4326 + (Math.random() - 0.5) * 0.1,
-      longitude: -99.1332 + (Math.random() - 0.5) * 0.1,
-      address: "Santa Fe, CDMX",
+      latitude: 40.7484 + (Math.random() - 0.5) * 0.01,
+      longitude: -73.9857 + (Math.random() - 0.5) * 0.01,
+      address: "Empire State Building, New York, NY",
     },
-    distance: "8.0 mi",
-    estimatedTime: "24 min",
+    distance: "2.1 mi",
+    estimatedTime: "12 min",
     requestTime: "1 min ago",
     pickupTime: "2024-01-15 16:15:00",
     status: "pending",
@@ -141,6 +144,11 @@ const DriverTripRequestsScreen = () => {
   const openInMaps = (trip: any) => {
     const url = `https://www.google.com/maps/dir/${trip.pickupLocation.latitude},${trip.pickupLocation.longitude}/${trip.destination.latitude},${trip.destination.longitude}`;
     Linking.openURL(url).catch(err => console.error('Error opening maps:', err));
+  };
+
+  const makePhoneCall = (phoneNumber: string) => {
+    const url = `tel:${phoneNumber}`;
+    Linking.openURL(url).catch(err => console.error('Error opening phone dialer:', err));
   };
 
   const zoomIn = () => {
@@ -254,12 +262,12 @@ const DriverTripRequestsScreen = () => {
     const isActive = activeTrip === trip.id;
 
     // Calculate dynamic height: screen height - header - tabs - padding - breathing room
-    // Approximate header height: 60px, tabs height: 80px, padding: 40px, breathing room: 40px
-    const availableHeight = screenHeight - 220;
-    const minHeight = 300;
+    // Approximate header height: 60px, tabs height: 80px, padding: 40px, breathing room: 60px
+    const availableHeight = screenHeight - 240;
+    const minHeight = 280;
     const cardHeight = isActive ? Math.max(availableHeight, minHeight) : "auto";
 
-    const mapHeight = isActive ? Math.max(availableHeight - 200, 200) : 200;
+    const mapHeight = isActive ? Math.max(availableHeight - 240, 180) : 160;
 
     return (
       <View
@@ -269,11 +277,11 @@ const DriverTripRequestsScreen = () => {
         }`}
         style={{
           minHeight: cardHeight,
-          width: isActive ? "98%" : "95%",
+          width: isActive ? "96%" : "92%",
           alignSelf: "center",
         }}
       >
-        <VStack className={isActive ? "p-2" : "p-4"}>
+        <VStack className={isActive ? "p-3" : "p-5"}>
           {/* Destination at the top */}
           <VStack className="mb-2">
             <HStack className="items-center mb-1">
@@ -285,7 +293,7 @@ const DriverTripRequestsScreen = () => {
           </VStack>
 
           {/* Trip Information Block - 4 single lines */}
-          <VStack className="mb-4 space-y-2">
+          <VStack className="mb-5 space-y-3">
             {/* Customer */}
             <HStack className="items-center">
               <Ionicons name="person-outline" size={20} color="#ec1381" />
@@ -317,7 +325,7 @@ const DriverTripRequestsScreen = () => {
 
           {/* Map with border */}
           <View
-            className="rounded-lg overflow-hidden border-2 border-[#ec1381] mb-4 relative"
+            className="rounded-lg overflow-hidden border-2 border-[#ec1381] mb-5 relative"
             style={{ height: mapHeight }}
           >
             <MapView
@@ -388,7 +396,7 @@ const DriverTripRequestsScreen = () => {
           </View>
 
           {/* Action Buttons */}
-          <HStack className="gap-2">
+          <HStack className="gap-3">
             {trip.status === "pending" ? (
               <TouchableOpacity
                 onPress={() => handleAcceptTrip(trip.id)}
@@ -432,6 +440,7 @@ const DriverTripRequestsScreen = () => {
                 <TouchableOpacity
                   className="border border-[#ec1381] py-3 px-4 rounded-lg"
                   style={{ minWidth: 60 }}
+                  onPress={() => makePhoneCall(trip.phoneNumber)}
                 >
                   <HStack className="items-center justify-center">
                     <Ionicons name="call" size={20} color="#ec1381" />
@@ -452,7 +461,7 @@ const DriverTripRequestsScreen = () => {
       return (
         <DashboardLayout title="Trip Requests">
           <ScrollView className="flex-1" contentContainerStyle={{ paddingBottom: 20 }}>
-            <View className="mt-2">
+            <View className="mt-4">
               {renderTripRequestCard(activeTripData)}
             </View>
           </ScrollView>
@@ -465,7 +474,7 @@ const DriverTripRequestsScreen = () => {
     <DashboardLayout title="Trip Requests">
       <ScrollView className="flex-1" contentContainerStyle={{ paddingBottom: 20 }}>
         {tripRequests.length > 0 ? (
-          <VStack className="py-2">
+          <VStack className="py-4">
             {tripRequests.map(renderTripRequestCard)}
           </VStack>
         ) : (
