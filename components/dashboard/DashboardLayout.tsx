@@ -53,7 +53,7 @@ export function DashboardLayout({
       {/* Main Content */}
       <ScrollView
         className="flex-1 px-4"
-        contentContainerStyle={{ paddingBottom: 20 }}
+        contentContainerStyle={{ paddingBottom: 10 }} // Padding to account for tab bar height (80px) + small gap
         showsVerticalScrollIndicator={false}
       >
         {children}

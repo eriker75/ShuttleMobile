@@ -48,7 +48,7 @@ const DriverVerificationScreen = () => {
 
       if (success) {
         Alert.alert("Success", "Verification successful!", [
-          { text: "OK", onPress: () => router.replace("/dashboard") },
+          { text: "OK", onPress: () => router.replace("/dashboard/tripRequests") },
         ]);
       } else {
         Alert.alert("Error", "Invalid verification code");

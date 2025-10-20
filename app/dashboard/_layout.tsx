@@ -13,9 +13,9 @@ export default function DashboardLayout() {
             backgroundColor: "#000000",
             borderTopColor: "#374151",
             borderTopWidth: 1,
-            paddingBottom: 8,
+            paddingBottom: 20, // Increased bottom padding for better spacing
             paddingTop: 8,
-            height: 80,
+            height: 110, // Increased height to accommodate more padding
           },
           tabBarActiveTintColor: "#EC1F81",
           tabBarInactiveTintColor: "#9CA3AF",
