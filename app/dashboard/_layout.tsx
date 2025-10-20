@@ -1,6 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import React from "react";
+import { Platform } from "react-native";
 import { AuthGuard } from "../../components/auth/AuthGuard";
 
 export default function DashboardLayout() {
@@ -15,7 +16,7 @@ export default function DashboardLayout() {
             borderTopWidth: 1,
             paddingBottom: 20, // Increased bottom padding for better spacing
             paddingTop: 8,
-            height: 110, // Increased height to accommodate more padding
+            height: Platform.OS === "android" ? 110 : 80, // Increased height to accommodate more padding
           },
           tabBarActiveTintColor: "#EC1F81",
           tabBarInactiveTintColor: "#9CA3AF",
