@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "hiresprint_shuttle.app"
-               BlueprintName = "hiresprint_shuttle"
-               ReferencedContainer = "container:hiresprint_shuttle.xcodeproj">
+               BuildableName = "hiresprintshuttle.app"
+               BlueprintName = "hiresprintshuttle"
+               ReferencedContainer = "container:hiresprintshuttle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "hiresprint_shuttleTests.xctest"
-               BlueprintName = "hiresprint_shuttleTests"
-               ReferencedContainer = "container:hiresprint_shuttle.xcodeproj">
+               BuildableName = "hiresprintshuttleTests.xctest"
+               BlueprintName = "hiresprintshuttleTests"
+               ReferencedContainer = "container:hiresprintshuttle.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "hiresprint_shuttle.app"
-            BlueprintName = "hiresprint_shuttle"
-            ReferencedContainer = "container:hiresprint_shuttle.xcodeproj">
+            BuildableName = "hiresprintshuttle.app"
+            BlueprintName = "hiresprintshuttle"
+            ReferencedContainer = "container:hiresprintshuttle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "hiresprint_shuttle.app"
-            BlueprintName = "hiresprint_shuttle"
-            ReferencedContainer = "container:hiresprint_shuttle.xcodeproj">
+            BuildableName = "hiresprintshuttle.app"
+            BlueprintName = "hiresprintshuttle"
+            ReferencedContainer = "container:hiresprintshuttle.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

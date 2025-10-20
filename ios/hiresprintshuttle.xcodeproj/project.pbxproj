@@ -9,27 +9,27 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		688AB5FE24D349FAE1792D10 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0077D33BC699187E16F06C02 /* PrivacyInfo.xcprivacy */; };
-		A0D07DD8C120EA6D33050DB8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8F956302B31646A24D7DF /* ExpoModulesProvider.swift */; };
-		A406EED240AA340DB99A6007 /* libPods-hiresprint_shuttle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BF299DFC809B88B2108A90 /* libPods-hiresprint_shuttle.a */; };
+		866458FB67888DB1AE0CA964 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2DCAF9CED2CBB6EADD6DFE55 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		C8FCCE94F211EF1D5844B52A /* libPods-hiresprintshuttle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D6F93C8087D366B3960152 /* libPods-hiresprintshuttle.a */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		FFF12829CF69E30736DA0C6B /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC5361A11CD5411953F920 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0077D33BC699187E16F06C02 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = hiresprint_shuttle/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		06B2F1AC2032DB2E22E2D817 /* Pods-hiresprint_shuttle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiresprint_shuttle.debug.xcconfig"; path = "Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* hiresprint_shuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hiresprint_shuttle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hiresprint_shuttle/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hiresprint_shuttle/Info.plist; sourceTree = "<group>"; };
-		33BF299DFC809B88B2108A90 /* libPods-hiresprint_shuttle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hiresprint_shuttle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57F8F956302B31646A24D7DF /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-hiresprint_shuttle/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		9EB75F7843042605DEE08115 /* Pods-hiresprint_shuttle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiresprint_shuttle.release.xcconfig"; path = "Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle.release.xcconfig"; sourceTree = "<group>"; };
-		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = hiresprint_shuttle/SplashScreen.storyboard; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* hiresprintshuttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hiresprintshuttle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = hiresprintshuttle/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = hiresprintshuttle/Info.plist; sourceTree = "<group>"; };
+		17D6F93C8087D366B3960152 /* libPods-hiresprintshuttle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hiresprintshuttle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCAF9CED2CBB6EADD6DFE55 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = hiresprintshuttle/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		40DC5361A11CD5411953F920 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-hiresprintshuttle/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		590A25EFA72F164D65F727A6 /* Pods-hiresprintshuttle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiresprintshuttle.debug.xcconfig"; path = "Target Support Files/Pods-hiresprintshuttle/Pods-hiresprintshuttle.debug.xcconfig"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = hiresprintshuttle/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		CEC1C2DBC595AB00F1832DCF /* Pods-hiresprintshuttle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiresprintshuttle.release.xcconfig"; path = "Target Support Files/Pods-hiresprintshuttle/Pods-hiresprintshuttle.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = hiresprint_shuttle/AppDelegate.swift; sourceTree = "<group>"; };
-		F11748442D0722820044C1D9 /* hiresprint_shuttle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hiresprint_shuttle-Bridging-Header.h"; path = "hiresprint_shuttle/hiresprint_shuttle-Bridging-Header.h"; sourceTree = "<group>"; };
+		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = hiresprintshuttle/AppDelegate.swift; sourceTree = "<group>"; };
+		F11748442D0722820044C1D9 /* hiresprintshuttle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "hiresprintshuttle-Bridging-Header.h"; path = "hiresprintshuttle/hiresprintshuttle-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,42 +37,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A406EED240AA340DB99A6007 /* libPods-hiresprint_shuttle.a in Frameworks */,
+				C8FCCE94F211EF1D5844B52A /* libPods-hiresprintshuttle.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* hiresprint_shuttle */ = {
+		13B07FAE1A68108700A75B9A /* hiresprintshuttle */ = {
 			isa = PBXGroup;
 			children = (
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
-				F11748442D0722820044C1D9 /* hiresprint_shuttle-Bridging-Header.h */,
+				F11748442D0722820044C1D9 /* hiresprintshuttle-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				0077D33BC699187E16F06C02 /* PrivacyInfo.xcprivacy */,
+				2DCAF9CED2CBB6EADD6DFE55 /* PrivacyInfo.xcprivacy */,
 			);
-			name = hiresprint_shuttle;
+			name = hiresprintshuttle;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				33BF299DFC809B88B2108A90 /* libPods-hiresprint_shuttle.a */,
+				17D6F93C8087D366B3960152 /* libPods-hiresprintshuttle.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		652A6351CD106719105F14C3 /* ExpoModulesProviders */ = {
+		44F5A9F400CC1D7DD9DE224A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CA008929C32AF569EC5D6876 /* hiresprint_shuttle */,
+				590A25EFA72F164D65F727A6 /* Pods-hiresprintshuttle.debug.xcconfig */,
+				CEC1C2DBC595AB00F1832DCF /* Pods-hiresprintshuttle.release.xcconfig */,
 			);
-			name = ExpoModulesProviders;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -85,12 +87,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* hiresprint_shuttle */,
+				13B07FAE1A68108700A75B9A /* hiresprintshuttle */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				AABC853471712C49C2B767B0 /* Pods */,
-				652A6351CD106719105F14C3 /* ExpoModulesProviders */,
+				44F5A9F400CC1D7DD9DE224A /* Pods */,
+				C20BD107B03A9A4A264C8A43 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -100,19 +102,9 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* hiresprint_shuttle.app */,
+				13B07F961A680F5B00A75B9A /* hiresprintshuttle.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AABC853471712C49C2B767B0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				06B2F1AC2032DB2E22E2D817 /* Pods-hiresprint_shuttle.debug.xcconfig */,
-				9EB75F7843042605DEE08115 /* Pods-hiresprint_shuttle.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -121,40 +113,48 @@
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
 			);
 			name = Supporting;
-			path = hiresprint_shuttle/Supporting;
+			path = hiresprintshuttle/Supporting;
 			sourceTree = "<group>";
 		};
-		CA008929C32AF569EC5D6876 /* hiresprint_shuttle */ = {
+		C20BD107B03A9A4A264C8A43 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				57F8F956302B31646A24D7DF /* ExpoModulesProvider.swift */,
+				ED2A540AECC48A4C171D33F8 /* hiresprintshuttle */,
 			);
-			name = hiresprint_shuttle;
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		ED2A540AECC48A4C171D33F8 /* hiresprintshuttle */ = {
+			isa = PBXGroup;
+			children = (
+				40DC5361A11CD5411953F920 /* ExpoModulesProvider.swift */,
+			);
+			name = hiresprintshuttle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* hiresprint_shuttle */ = {
+		13B07F861A680F5B00A75B9A /* hiresprintshuttle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hiresprint_shuttle" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hiresprintshuttle" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				BE48CB8A2CBF4554A8C31F90 /* [Expo] Configure project */,
+				50E0DC6685883EAC55D5FC85 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				5CB6EA7C30309B13007C8B04 /* [CP] Embed Pods Frameworks */,
+				7E5825981A3AB1B34859263B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = hiresprint_shuttle;
-			productName = hiresprint_shuttle;
-			productReference = 13B07F961A680F5B00A75B9A /* hiresprint_shuttle.app */;
+			name = hiresprintshuttle;
+			productName = hiresprintshuttle;
+			productReference = 13B07F961A680F5B00A75B9A /* hiresprintshuttle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hiresprint_shuttle" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hiresprintshuttle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* hiresprint_shuttle */,
+				13B07F861A680F5B00A75B9A /* hiresprintshuttle */,
 			);
 		};
 /* End PBXProject section */
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				688AB5FE24D349FAE1792D10 /* PrivacyInfo.xcprivacy in Resources */,
+				866458FB67888DB1AE0CA964 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,70 +233,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-hiresprint_shuttle-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-hiresprintshuttle-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5CB6EA7C30309B13007C8B04 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoSystemUI/ExpoSystemUI_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/RNSVG/RNSVGFilters.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/boost/boost_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog_privacy.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoSystemUI_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNSVGFilters.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/boost_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/glog_privacy.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hiresprint_shuttle/Pods-hiresprint_shuttle-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE48CB8A2CBF4554A8C31F90 /* [Expo] Configure project */ = {
+		50E0DC6685883EAC55D5FC85 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -313,7 +257,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-hiresprint_shuttle/expo-configure-project.sh\"\n";
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-hiresprintshuttle/expo-configure-project.sh\"\n";
+		};
+		7E5825981A3AB1B34859263B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hiresprintshuttle/Pods-hiresprintshuttle-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hiresprintshuttle/Pods-hiresprintshuttle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hiresprintshuttle/Pods-hiresprintshuttle-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoSystemUI/ExpoSystemUI_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage/RNCAsyncStorage_resources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNSVG/RNSVGFilters.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/boost/boost_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/react-native-maps/ReactNativeMapsPrivacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoSystemUI_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNCAsyncStorage_resources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNSVGFilters.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/boost_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/glog_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ReactNativeMapsPrivacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hiresprintshuttle/Pods-hiresprintshuttle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -323,7 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				A0D07DD8C120EA6D33050DB8 /* ExpoModulesProvider.swift in Sources */,
+				FFF12829CF69E30736DA0C6B /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,18 +336,18 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06B2F1AC2032DB2E22E2D817 /* Pods-hiresprint_shuttle.debug.xcconfig */;
+			baseConfigurationReference = 590A25EFA72F164D65F727A6 /* Pods-hiresprintshuttle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = hiresprint_shuttle/hiresprint_shuttle.entitlements;
+				CODE_SIGN_ENTITLEMENTS = hiresprintshuttle/hiresprintshuttle.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = hiresprint_shuttle/Info.plist;
+				INFOPLIST_FILE = hiresprintshuttle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,8 +361,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiresprint.shuttle;
-				PRODUCT_NAME = hiresprint_shuttle;
-				SWIFT_OBJC_BRIDGING_HEADER = "hiresprint_shuttle/hiresprint_shuttle-Bridging-Header.h";
+				PRODUCT_NAME = hiresprintshuttle;
+				SWIFT_OBJC_BRIDGING_HEADER = "hiresprintshuttle/hiresprintshuttle-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,13 +372,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EB75F7843042605DEE08115 /* Pods-hiresprint_shuttle.release.xcconfig */;
+			baseConfigurationReference = CEC1C2DBC595AB00F1832DCF /* Pods-hiresprintshuttle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = hiresprint_shuttle/hiresprint_shuttle.entitlements;
+				CODE_SIGN_ENTITLEMENTS = hiresprintshuttle/hiresprintshuttle.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = hiresprint_shuttle/Info.plist;
+				INFOPLIST_FILE = hiresprintshuttle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,8 +392,8 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiresprint.shuttle;
-				PRODUCT_NAME = hiresprint_shuttle;
-				SWIFT_OBJC_BRIDGING_HEADER = "hiresprint_shuttle/hiresprint_shuttle-Bridging-Header.h";
+				PRODUCT_NAME = hiresprintshuttle;
+				SWIFT_OBJC_BRIDGING_HEADER = "hiresprintshuttle/hiresprintshuttle-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,7 +527,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hiresprint_shuttle" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "hiresprintshuttle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -532,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hiresprint_shuttle" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "hiresprintshuttle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
